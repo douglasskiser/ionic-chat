@@ -1,0 +1,7 @@
+<div class="bar bar-footer bar-positive">
+    <input type="file" id="browseBtn" accept="image/*" />
+    <button class="button icon ion-image chat-bar-btn" id="browse-btn" ng-click="browseFile()"></button>
+
+    <input type="text" id="chat-input" placeholder="Enter you message..." ng-model="chatInput" ng-keyup="validateMessage($event)">
+    <button class="button icon ion-paper-airplane chat-bar-btn" ng-click="sendMessage()"></button>
+</div>

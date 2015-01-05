@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="app/app.css" rel="stylesheet">
+    <link href="components/chat-list/chat-list.css" rel="stylesheet">
+    <link href="components/chat-bar/chat-bar.css" rel="stylesheet">
+
+    <script src="lib/socket.io-1.0.6.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-audio/app/angular.audio.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="app/app.js"></script>
+    <script src="app/app.controller.js"></script>
+    <script src="app/main/main.js"></script>
+    <script src="app/main/main.controller.js"></script>
+    <script src="app/chat/chat.js"></script>
+    <script src="app/chat/chat.controller.js"></script>
+    <script src="components/chat-bar/chat-bar.directive.js"></script>
+    <script src="components/chat-list/chat-list.directive.js"></script>
+    <script src="components/local-storage/local-storage.service.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="AppCtrl as ctrl">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-arrow-left-c"></i> Back
+        </ion-nav-back-button>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon icon ion-gear-a" ng-click="ctrl.openPopover($event)"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+</body>
+
+</html>

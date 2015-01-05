@@ -1,0 +1,23 @@
+<ion-popover-view>
+    <ion-header-bar>
+        <h1 class="title">Settings</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-toggle">
+                Sound FX
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="settings.sound" ng-change="toggleSound()" />
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </ion-item>
+            <ion-item class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="Nickname" ng-model="settings.name" ng-change="changeName()">
+                </label>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-popover-view>

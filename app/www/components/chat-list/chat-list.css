@@ -1,0 +1,14 @@
+input[type="file"] {
+	height: 0;
+	overflow: auto;
+	display: none;
+}
+
+.my-message .item-content {
+	background-color: #C0EBFF;
+	text-align: right;
+}
+
+.incoming-message .item-content {
+	background-color: #F7FDFF;
+}
